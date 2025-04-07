@@ -1,0 +1,11 @@
+-   id: euphoria-ginkgo
+    name: 'euphoria ginkgo test'
+    entry: euphoria-ginkgo.sh
+    files: '\_test\.go$'
+    language: 'script'
+    args: [-packages=_test]
+    require_serial: false
+    packages:
+        - _test
+    minimum_pre_commit_version: '0'
+    description: "Run `go test -v $package` to run ginkgo test suites, requires golang and ginkgo to be installed."
